@@ -77,7 +77,7 @@ function Registro() {
                             
                         </form>
                         <div className="text-center">
-                            <a className="small" href="login.html">Already have an account? Login!</a>
+                            <a className="small" href="login">Already have an account? Login!</a>
                         </div>
                     </div>
                 </div>
