@@ -1,13 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
 import { Link} from "react-router-dom";
 
 function Registro() {
   return (
     
-    <div className="container">
+    <div className="container ">
+        <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5">
+                <a className="navbar-brand" href="/#">
+                    <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
+                    PeluqueriaUnisex
+                </a>
+                <ul className="navbar-nav ml-auto ">
 
-    <div className="card o-hidden border-0 shadow-lg my-5">
+                    <li className="nav-item active">
+                        <Link to="/" className="nav-link">
+                            Inicio
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/#">Servicios</a>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/login" className="nav-link">
+                            Ingresar
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/register" className="nav-link">
+                            Registrarse
+                        </Link>
+                    </li>
+
+                </ul>
+                
+                </nav>
+
+    <div className="card o-hidden border-0 shadow-lg mt-5">
         <div className="card-body p-0">
             {/* <!-- Nested Row within Card Body --> */}
             <div className="row">
@@ -46,17 +74,8 @@ function Registro() {
                                 Register Account
                             </a>
                             <hr/>
-                            <a href="index.html" className="btn btn-google btn-user btn-block">
-                                <i className="fab fa-google fa-fw"></i> Register with Google
-                            </a>
-                            <a href="index.html" className="btn btn-facebook btn-user btn-block">
-                                <i className="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                            </a>
+                            
                         </form>
-                        <hr/>
-                        <div className="text-center">
-                            <a className="small" href="forgot-password.html">Forgot Password?</a>
-                        </div>
                         <div className="text-center">
                             <a className="small" href="login.html">Already have an account? Login!</a>
                         </div>

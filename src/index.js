@@ -6,14 +6,16 @@ import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Registro from './Registro';
+import Inicio from './Inicio'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route exact path="/login" element={<Login/>} />
-        <Route path="/" element={<App/>} />
+        <Route path="/" element={<Inicio/>} />
         <Route path="/register" element={<Registro/>} />
+        <Route path="/dashboard" element={<App/>} />
       </Routes>
     </Router>
   </React.StrictMode>
