@@ -43,10 +43,11 @@ function Inicio() {
                 </ul>
                 
                 </nav>
+            </div>
                 {/* <!-- End of Topbar --> */}
 
                 {/* <!-- Begin Page Content --> */}
-                <div className="container-fluid">
+                <div className="container-fluid" style={{height:"750px"}}>
 
                     {/* <!-- Page Heading --> */}
                     <h1 className="h3 mb-4 text-gray-800">Blank Page</h1>
@@ -54,7 +55,7 @@ function Inicio() {
                 </div>
                 {/* <!-- /.container-fluid --> */}
 
-            </div>
+            
             {/* <!-- End of Main Content --> */}
 
             {/* <!-- Footer --> */}

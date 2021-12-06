@@ -5,8 +5,9 @@ function Login() {
   return (
 
     
-    <div className="container">
-        <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5">
+    <div id="wrapper">
+        <div id="content-wrapper" className="d-flex flex-column">
+        <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5 mb-5">
                 <a className="navbar-brand" href="/#">
                     <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
                     PeluqueriaUnisex
@@ -35,10 +36,12 @@ function Login() {
                 </ul>
                 
                 </nav>
+        
+        
 
-        <div className="row justify-content-center mt-5">
+        <div className="container mt-5" style={{height:"680px"}} >
 
-            <div className="col-xl-10 col-lg-12 col-md-9 pt-5">
+            <div className="m-5">
 
                 <div className="card o-hidden border-0 shadow-lg my-5">
                     <div className="card-body p-0">
@@ -86,7 +89,14 @@ function Login() {
             </div>
 
         </div>
-
+        <footer className="sticky-footer bg-white">
+                <div className="container my-auto">
+                    <div className="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
 
    
