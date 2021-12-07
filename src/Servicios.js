@@ -53,7 +53,9 @@ function Servicios() {
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec arcu odio. Maecenas quis orci aliquet, tincidunt purus luctus, aliquet risus. Curabitur eget lobortis massa. Ut eget sagittis sapien. In interdum eget enim ac ultrices. Cras condimentum convallis est et hendrerit.</p>
                         </div>
                         <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <Link to="/servicio" className="nav-link text-center">
+                            Agendar!
+                        </Link>
                         </div>
                     </div>
                     <div class="card">
@@ -63,7 +65,9 @@ function Servicios() {
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec arcu odio. Maecenas quis orci aliquet, tincidunt purus luctus, aliquet risus. Curabitur eget lobortis massa. Ut eget sagittis sapien. In interdum eget enim ac ultrices. Cras condimentum convallis est et hendrerit.</p>
                         </div>
                         <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <Link to="/servicio" className="nav-link text-center">
+                            Agendar!
+                        </Link>
                         </div>
                     </div>
                     <div class="card">
@@ -73,7 +77,9 @@ function Servicios() {
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec arcu odio. Maecenas quis orci aliquet, tincidunt purus luctus, aliquet risus. Curabitur eget lobortis massa. Ut eget sagittis sapien. In interdum eget enim ac ultrices. Cras condimentum convallis est et hendrerit.</p>
                         </div>
                         <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <Link to="/servicio" className="nav-link text-center">
+                            Agendar!
+                        </Link>
                         </div>
                     </div>
                     </div>
