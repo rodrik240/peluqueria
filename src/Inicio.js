@@ -49,15 +49,15 @@ function Inicio() {
                 {/* <!-- Begin Page Content --> */}
                 <div className="d-block ">
                     <div style={{ height: "520px", overflow: "hidden", position: "relative" }}>
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000" >
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-interval="3000" >
+                                <div class="carousel-item active"  >
                                     <img className="" src="img/carrucel3.jpg" style={{ height: "1000px", width: "100%" }} alt="..." />
                                 </div>
-                                <div class="carousel-item" data-interval="3000">
+                                <div class="carousel-item" >
                                     <img src="img/carrucel1.jpg" style={{ height: "1000px", width: "100%" }} alt="..." />
                                 </div>
-                                <div class="carousel-item" data-interval="3000">
+                                <div class="carousel-item" >
                                     <img src="img/carrucel2.jpg" style={{ height: "1000px", width: "100%" }} alt="..." />
                                 </div>
                             </div>

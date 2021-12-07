@@ -33,7 +33,7 @@ function agenda() {
 
                 </ul>
 
-            </nav> 
+            </nav>
 
             <div className="card o-hidden border-0 shadow-lg ">
                 <h4 className="text-center mt-4">Agenda</h4>
@@ -130,7 +130,8 @@ function agenda() {
                         <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
-            </footer>   </div>
+            </footer>
+        </div>
 
 
 

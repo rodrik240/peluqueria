@@ -37,7 +37,7 @@ function reservas() {
 
 
             <div className="card o-hidden border-0 shadow-lg m-5  ">
-                <h4 className="text-center m-2">Gestion de reservas</h4>
+                <h4 className="text-center mt-4 ">Gestion de reservas</h4>
                 <div className="card-body ">
                     {/* <!-- Nested Row within Card Body --> */}
                     <div className="row">
@@ -47,9 +47,10 @@ function reservas() {
                                     <table className="table table-bordered">
                                         <thead className="table-dark" >
                                             <tr>
-                                                <th>Servicio</th>
-                                                <th>Fecha</th>
-                                                <th>Hora</th>
+                                                <th className="text-center">Servicio</th>
+                                                <th className="text-center">Fecha</th>
+                                                <th className="text-center">Hora</th>
+                                                <th className="text-center">Estado</th>
 
 
                                             </tr>
@@ -59,6 +60,16 @@ function reservas() {
                                                 <td>mascarillas</td>
                                                 <td> 28/11/2021 </td>
                                                 <td> 08:00-08:45 </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
 
                                             </tr>
 
@@ -66,6 +77,16 @@ function reservas() {
                                                 <td>cortes</td>
                                                 <td> 28/11/2021 </td>
                                                 <td> 09:00-09:45 </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
 
                                             </tr>
 
@@ -74,6 +95,16 @@ function reservas() {
                                                 <td>cortes </td>
                                                 <td> 28/11/2021 </td>
                                                 <td> 10:00-10:45 </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
 
                                             </tr>
 
@@ -82,6 +113,16 @@ function reservas() {
                                                 <td>cortes</td>
                                                 <td> 29/11/2021 </td>
                                                 <td> 11:00-11:45 </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
 
                                             </tr>
 
@@ -90,13 +131,32 @@ function reservas() {
                                                 <td>cortes</td>
                                                 <td>  29/11/2021 </td>
                                                 <td> 02:00-02-45 </td>
-
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
                                             </tr>
 
                                             <tr>
                                                 <td>mascarillas</td>
                                                 <td> 29/11/2021 </td>
                                                 <td> 03:00-03:45  </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
 
                                             </tr>
 
@@ -105,6 +165,16 @@ function reservas() {
                                                 <td>Diseño de uñas</td>
                                                 <td> 31/11/2021 </td>
                                                 <td> 04:00-04:45 </td>
+                                                <td>
+                                                    <div className="row">
+                                                        <div className="col-lg-4 mt-2">
+                                                            <p>Programado</p>
+                                                        </div>
+                                                        <div className="col-lg-4 ">
+                                                            <button type="button" className="btn btn-danger">Cancelar</button>
+                                                        </div> 
+                                                    </div>
+                                                </td>
                                             </tr>
 
 
@@ -114,11 +184,6 @@ function reservas() {
                                         </tbody>
 
                                     </table>
-                                    <button className="" style={{ padding: "30px", background: "light-blue", color: "black" }} > Cancelar Reserva </button>
-
-
-
-
 
                                 </div>
 

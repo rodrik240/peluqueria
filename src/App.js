@@ -137,7 +137,60 @@ function App() {
 
                     {/*<!-- Begin Page Content -->*/}
                     <div className="container-fluid">
+                    <table className="table table-bordered">
+                                        <thead className="table-dark" >
+                                            <tr>
+                                                <th>empleado</th>
+                                                <th>trabajo</th>
 
+
+                                            </tr>
+                                        </thead>
+                                        <tbody className="table-dark  table-hover ">
+                                            <tr>
+                                                <td> Anna Rivera </td>
+                                                <td> Limpieza facial </td>
+
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Maria Castro</td>
+                                                <td> Hidratación Facial </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Karina Ramirez</td>
+                                                <td> Grafilado </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td> Luz Maria </td>
+                                                <td> Pixie</td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>Javier Rodriguez</td>
+                                                <td>Degradado</td>
+
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Juan Ortega</td>
+                                                <td>Buzz</td>
+
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
                        
                     </div>
                     {/*<!-- /.container-fluid -->*/}

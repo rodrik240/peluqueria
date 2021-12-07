@@ -53,11 +53,78 @@ function Servicio() {
                                 <div class="col-lg-8 col-md-12 my-auto pl-5">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum pellentesque risus vitae maximus. Phasellus consectetur mi nec urna finibus elementum. Ut eros turpis, iaculis in vestibulum vel, ornare ac nunc. Maecenas lectus risus, tincidunt lobortis egestas eu, fringilla sit amet purus. Donec non elementum dolor. Quisque consequat risus at bibendum consequat. Sed risus sem, congue vitae risus sed, mattis ultricies mi. </p>
                                 </div>
+                                <hr   size="2" width="100%" />
+
+                                <h3 className="text-center mb-4">Horarios</h3>
+                                
+                                <table className="table table-bordered" >
+                                        <thead className="table-dark" >
+                                            <tr>
+                                                <th>Mañana</th>
+                                                <th>Tarde</th>
+                                                <th>Empleado</th>
+                                                <th>Disponibilidad</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="table-dark  table-hover ">
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td>Ocupado</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td><a  href="/gestionReservas">Reservar</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td><a  href="/gestionReservas">Reservar</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td><a  href="/gestionReservas">Reservar</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td>Ocupado</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td>Ocupado</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>08:00-08:45</td>
+                                                <td>13:00-13:45</td>
+                                                <td>NombreEmpleado</td>
+                                                <td>Ocupado</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                             </div>
                         </div>
-                        <div class="card-footer text-muted">
-                            Agendar!
-                        </div>
+                        
                     </div>
 
                 </div>
