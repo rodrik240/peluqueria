@@ -52,7 +52,7 @@ function Inicio() {
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="3000" >
-                            <img src="img/carrucel3.jpg" style={{height:"1000px",width:"100%"}} alt="..." />
+                            <img className=""src="img/carrucel3.jpg" style={{height:"1000px",width:"100%"}} alt="..." />
                             </div>
                             <div class="carousel-item" data-interval="3000">
                             <img src="img/carrucel1.jpg" style={{height:"1000px",width:"100%"}}  alt="..." />
@@ -73,11 +73,11 @@ function Inicio() {
                     </div>
                 </div>
                 <div className="h-45 m-5">
-                <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-12 my-auto">
-                            <img className="rounded img-fluid" src="img/team.jpg" style={{width:"350px"}} alt="..." />
+                <div class="row justify-content-center mx-auto" style={{width:"75%"}}>
+                        <div class="col-lg-4 col-md-12 my-auto pl-5">
+                            <img className="rounded img-fluid" src="img/team.jpg" style={{height:"380px"}} alt="..." />
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-12 my-auto pl-5">
                             <h3>Nuestro Equipo</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum pellentesque risus vitae maximus. Phasellus consectetur mi nec urna finibus elementum. Ut eros turpis, iaculis in vestibulum vel, ornare ac nunc. Maecenas lectus risus, tincidunt lobortis egestas eu, fringilla sit amet purus. Donec non elementum dolor. Quisque consequat risus at bibendum consequat. Sed risus sem, congue vitae risus sed, mattis ultricies mi. Integer blandit fermentum sollicitudin. Morbi elementum felis mauris, commodo malesuada ante ultrices sed. Nunc dapibus quis purus vel scelerisque. Duis ut risus nunc. Suspendisse potenti. Cras sit amet diam tortor. Nullam eget felis congue, feugiat ex quis, dictum nisi.</p>
                         </div>
