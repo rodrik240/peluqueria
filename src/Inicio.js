@@ -27,15 +27,15 @@ function Inicio() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/#">Servicios</a>
+                        <a className="nav-link" href="/servicios">Servicios</a>
                     </li>
                     <li className="nav-item">
-                        <Link to="/login" className="nav-link">
+                        <Link to="/ingresar" className="nav-link">
                             Ingresar
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/register" className="nav-link">
+                        <Link to="/registro" className="nav-link">
                             Registrarse
                         </Link>
                     </li>
@@ -48,7 +48,7 @@ function Inicio() {
 
                 {/* <!-- Begin Page Content --> */}
                 <div className="d-block ">
-                    <div style={{height:"530px",overflow:"hidden",position:"relative"}}>
+                    <div style={{height:"520px",overflow:"hidden",position:"relative"}}>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="3000" >

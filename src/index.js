@@ -7,15 +7,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Registro from './Registro';
 import Inicio from './Inicio'
+import Servicios from './Servicios'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/ingresar" element={<Login/>} />
         <Route path="/" element={<Inicio/>} />
-        <Route path="/register" element={<Registro/>} />
+        <Route path="/registro" element={<Registro/>} />
         <Route path="/dashboard" element={<App/>} />
+        <Route path="/servicios" element={<Servicios/>} />
       </Routes>
     </Router>
   </React.StrictMode>

@@ -1,7 +1,7 @@
 import './App.css';
 import { Link} from "react-router-dom";
 
-function Login() {
+function Servicios() {
   return (
 
     
@@ -52,26 +52,33 @@ function Login() {
                             <div className="col-lg-6">
                                 <div className="p-5">
                                     <div className="text-center">
-                                        <h1 className="h4 text-gray-900 mb-4">Bienvenido de vuelta!</h1>
+                                        <h1 className="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
                                     <form className="user">
                                         <div className="form-group">
                                             <input type="email" className="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Ingrese su usuario" />
+                                                placeholder="Enter Email Address..." />
                                         </div>
                                         <div className="form-group">
                                             <input type="password" className="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Contraseña" />
+                                                id="exampleInputPassword" placeholder="Password" />
+                                        </div>
+                                        <div className="form-group">
+                                            <div className="custom-control custom-checkbox small">
+                                                <input type="checkbox" className="custom-control-input" id="customCheck" />
+                                                <label className="custom-control-label" for="customCheck">Remember
+                                                    Me</label>
+                                            </div>
                                         </div>
                                         <a href="index.html" className="btn btn-primary btn-user btn-block">
-                                            Ingresar
+                                            Login
                                         </a>
                                         <hr/>
                                     </form>
 
                                     <div className="text-center">
-                                        <a className="small" href="/registro">Crear una cuenta!</a>
+                                        <a className="small" href="register.html">Create an Account!</a>
                                     </div>
                                 </div>
                             </div>
@@ -96,4 +103,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Servicios;
