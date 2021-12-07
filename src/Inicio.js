@@ -8,13 +8,13 @@ function Inicio() {
         {/* <!-- Page Wrapper --> */}
 
         {/* <!-- Content Wrapper --> */}
-        <div id="content-wrapper" className="d-flex flex-column">
+        <div id="content-wrapper">
 
             {/* <!-- Main Content --> */}
             <div id="content ">
 
                 {/* <!-- Topbar --> */}
-                <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5">
+                <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar static-top shadow px-5">
                 <a className="navbar-brand" href="/#">
                     <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
                     PeluqueriaUnisex
@@ -47,12 +47,49 @@ function Inicio() {
                 {/* <!-- End of Topbar --> */}
 
                 {/* <!-- Begin Page Content --> */}
-                <div className="container-fluid" style={{height:"750px"}}>
-
-                    {/* <!-- Page Heading --> */}
-                    <h1 className="h3 mb-4 text-gray-800">Blank Page</h1>
-
+                <div className="d-block ">
+                    <div style={{height:"530px",overflow:"hidden",position:"relative"}}>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="3000" >
+                            <img src="img/carrucel3.jpg" style={{height:"1000px",width:"100%"}} alt="..." />
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                            <img src="img/carrucel1.jpg" style={{height:"1000px",width:"100%"}}  alt="..." />
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                            <img src="img/carrucel2.jpg" style={{height:"1000px",width:"100%"}}  alt="..." />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        </div>
+                    </div>
                 </div>
+                <div className="h-45 m-5">
+                <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-12 my-auto">
+                            <img className="rounded img-fluid" src="img/team.jpg" style={{width:"350px"}} alt="..." />
+                        </div>
+                        <div class="col-4">
+                            <h3>Nuestro Equipo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum pellentesque risus vitae maximus. Phasellus consectetur mi nec urna finibus elementum. Ut eros turpis, iaculis in vestibulum vel, ornare ac nunc. Maecenas lectus risus, tincidunt lobortis egestas eu, fringilla sit amet purus. Donec non elementum dolor. Quisque consequat risus at bibendum consequat. Sed risus sem, congue vitae risus sed, mattis ultricies mi. Integer blandit fermentum sollicitudin. Morbi elementum felis mauris, commodo malesuada ante ultrices sed. Nunc dapibus quis purus vel scelerisque. Duis ut risus nunc. Suspendisse potenti. Cras sit amet diam tortor. Nullam eget felis congue, feugiat ex quis, dictum nisi.</p>
+                        </div>
+                    </div>
+                        
+                    
+                    
+                </div>
+            
+                
+            
+                
                 {/* <!-- /.container-fluid --> */}
 
             
