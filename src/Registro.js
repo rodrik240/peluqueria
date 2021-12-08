@@ -36,13 +36,15 @@ function Registro() {
                     </ul>
 
                 </nav>
-                <div className="container" style={{ height: "780px" }}>
-                    <div className="card o-hidden border-0 shadow-lg mt-5">
+                <div className="container" style={{ height: "100%" }}>
+                    <div className="card o-hidden border-0 shadow-lg mb-5">
                         <div className="card-body p-0">
                             {/* <!-- Nested Row within Card Body --> */}
                             <div className="row">
-                                <div className="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                                <div className="col-lg-7">
+                                <div className="col-lg-5 d-none d-lg-block ">
+                                    <img className="rounded img-fluid p-5" src="img/registro.jpg" style={{ height: "100%" }} alt="..." />
+                                </div>
+                                <div className="col-lg-7 my-auto">
                                     <div className="p-5">
                                         <div className="text-center">
                                             <h1 className="h4 text-gray-900 mb-4">Crea una cuenta!</h1>

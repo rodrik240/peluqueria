@@ -39,17 +39,19 @@ function Login() {
 
 
 
-                <div className="container mt-5" style={{ height: "680px" }} >
+                <div className="container" style={{ height: "100%" }} >
 
-                    <div className="m-5">
+                    
 
-                        <div className="card o-hidden border-0 shadow-lg my-5">
+                        <div className="card o-hidden border-0 shadow-lg mb-5">
                             <div className="card-body p-0">
                                 {/* <!-- Nested Row within Card Body --> */}
 
                                 <div className="row">
-                                    <div className="col-lg-6 d-none d-lg-block bg-login-image"></div>
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-6 d-none d-lg-block ">
+                                    <img className="rounded img-fluid p-5" src="img/ingreso.jpg" style={{ height: "100%" }} alt="..." />
+                                    </div>
+                                    <div className="col-lg-6 my-auto">
                                         <div className="p-5">
                                             <div className="text-center">
                                                 <h1 className="h4 text-gray-900 mb-4">Bienvenido de vuelta!</h1>
@@ -77,7 +79,7 @@ function Login() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
 
                     </div>
 

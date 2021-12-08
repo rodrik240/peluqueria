@@ -1,53 +1,55 @@
 import './App.css';
 import { Link } from "react-router-dom";
-//var $ = require('jquery');
-//var dt = require('datatables.net')();
+
 function reporte() {
     return (
 
-        <div className="container-fluid" style={{ height: "100%" }}>
-            <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5">
-                <a className="navbar-brand" href="/#">
-                    <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
-                    PeluqueriaUnisex
-                </a>
-                <ul className="navbar-nav ml-auto ">
+        <div id="wrapper">
+            <div id="content-wrapper" className="d-flex flex-column">
 
-                    <li className="nav-item active">
-                        <Link to="/" className="nav-link">
-                            Inicio
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/#">Servicios</a>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/login" className="nav-link">
-                            Ingresar
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/register" className="nav-link">
-                            Registrarse
-                        </Link>
-                    </li>
+                <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5 mb-5">
+                    <a className="navbar-brand" href="/#">
+                        <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
+                        PeluqueriaUnisex
+                    </a>
+                    <ul className="navbar-nav ml-auto ">
 
-                </ul>
+                        <li className="nav-item active">
+                            <Link to="/" className="nav-link">
+                                Inicio
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="/servicios">Servicios</a>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/ingresar" className="nav-link">
+                                Ingresar
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/registro" className="nav-link">
+                                Registrarse
+                            </Link>
+                        </li>
 
-            </nav>
-            <div class="card shadow ">
-                        <div class="card-header">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                    </ul>
+
+                </nav>
+                <div class="container-fluid">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h4 class="m-0 font-weight-bold text-primary text-center">Reportes</h4>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsiv">
+                            <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Dia</th>
-                                            <th>Usuarios</th>
-                                            <th>Servicio</th>
-                                            <th>Costo</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
                                             <th>Start date</th>
                                             <th>Salary</th>
                                         </tr>
@@ -523,15 +525,17 @@ function reporte() {
                                 </table>
                             </div>
                         </div>
-                        </div>
-
-            <footer className="sticky-footer bg-white">
-                <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
+
                 </div>
-            </footer>
+                <footer className="sticky-footer bg-white">
+                    <div className="container my-auto">
+                        <div className="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2020</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
 
 

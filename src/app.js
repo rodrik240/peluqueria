@@ -43,16 +43,16 @@ function App() {
                         <div className="bg-white py-2 collapse-inner rounded">
                             <h6 className="collapse-header">Clientes</h6>
                             <a className="collapse-item" href="/">Inicio</a>
-                            <a className="collapse-item" href="/ingreso">Ingreso</a>
+                            <a className="collapse-item" href="/ingresar">Ingreso</a>
                             <a className="collapse-item" href="/registro">Registro</a>
                             <a className="collapse-item" href="/servicios">ListaServicios</a>
                             <a className="collapse-item" href="/servicio">Servicio</a>
-                            <a className="collapse-item" href="/agenda">Agenda</a>
                             <a className="collapse-item" href="/gestionReservas">GestionReservas</a>
                         </div>
                         <div className="bg-white py-2 collapse-inner rounded">
                             <h6 className="collapse-header">Empleados</h6>
                             <a className="collapse-item" href="/agenda">Agenda</a>
+                            <a className="collapse-item" href="/reporte">Reportes</a>
                         </div>
                     </div>
                 </li>
@@ -141,9 +141,9 @@ function App() {
                         <table className="table table-bordered">
                             <thead className="table-dark" >
                                 <tr>
-                                    <th>empleado</th>
-                                    <th>trabajo</th>
-                                    <th> ajustes </th>
+                                    <th>Empleado</th>
+                                    <th>Trabajo</th>
+                                    <th>Ajustes </th>
 
 
                                 </tr>
@@ -152,14 +152,14 @@ function App() {
                                 <tr>
                                     <td> Anna Rivera </td>
                                     <td> Limpieza facial </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>     </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>     </td>
 
                                 </tr>
 
                                 <tr>
                                     <td>Maria Castro</td>
                                     <td> Hidratación Facial</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
                                 </tr>
 
@@ -167,7 +167,7 @@ function App() {
                                 <tr>
                                     <td>Karina Ramirez</td>
                                     <td> Grafilado </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
                                 </tr>
 
@@ -175,7 +175,7 @@ function App() {
                                 <tr>
                                     <td> Luz Maria </td>
                                     <td> Pixie</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>    </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>    </td>
 
                                 </tr>
 
@@ -183,7 +183,7 @@ function App() {
                                 <tr>
                                     <td>Javier Rodriguez</td>
                                     <td>Degradado</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
 
                                 </tr>
@@ -191,19 +191,30 @@ function App() {
                                 <tr>
                                     <td>Juan Ortega</td>
                                     <td>Buzz</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
                                 </tr>
 
                             </tbody>
+                        
 
                         </table>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn btn-info form-control  btn-block" routerLink='/login'>cancelar cambios</button></div>
-                                <div class="col">
-                                    <button id="btnSubmit" class="btn btn-primary form-control btn-block" type="submit">Agregar </button> </div>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-8">
+                                <div className="form-group row">
+                                                <div className="col-sm-6 mb-3 mb-sm-0">
+                                                    <input type="text" className="form-control form-control-user" id="exampleFirstName"
+                                                        placeholder="Empleado" />
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <input type="text" className="form-control form-control-user" id="exampleLastName"
+                                                        placeholder="Trabajo" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="col-4">
+                                    <button id="btnSubmit" className="btn btn-success form-control btn-block" type="submit">Agregar </button> </div>
                             </div>
                         </div>
 
