@@ -22,8 +22,8 @@ function App() {
 
                 {/*<!-- Divider -->*/}
 
-
-
+            
+               
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider" />
 
@@ -43,28 +43,26 @@ function App() {
                         <div className="bg-white py-2 collapse-inner rounded">
                             <h6 className="collapse-header">Clientes</h6>
                             <a className="collapse-item" href="/">Inicio</a>
-                            <a className="collapse-item" href="/ingresar">Ingreso</a>
+                            <a className="collapse-item" href="/ingreso">Ingreso</a>
                             <a className="collapse-item" href="/registro">Registro</a>
                             <a className="collapse-item" href="/servicios">ListaServicios</a>
                             <a className="collapse-item" href="/servicio">Servicio</a>
+                            <a className="collapse-item" href="/agenda">Agenda</a>
                             <a className="collapse-item" href="/gestionReservas">GestionReservas</a>
                         </div>
                         <div className="bg-white py-2 collapse-inner rounded">
                             <h6 className="collapse-header">Empleados</h6>
                             <a className="collapse-item" href="/agenda">Agenda</a>
-                            <a className="collapse-item" href="/reporte">Reportes</a>
-                            <a className="collapse-item" href="/crearUsuarios">Crear Empleados</a>
                         </div>
-
                     </div>
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
+                
 
+    
 
-
-
-
+               
 
             </ul>
             {/*<!-- End of Sidebar -->*/}
@@ -83,7 +81,7 @@ function App() {
                             <i className="fa fa-bars"></i>
                         </button>
 
-
+                        
 
                         {/*<!-- Topbar Navbar -->*/}
                         <ul className="navbar-nav ml-auto">
@@ -112,7 +110,7 @@ function App() {
                                 </div>
                             </li>
 
-
+                            
 
                             {/*<!-- Nav Item - User Information -->*/}
                             <li className="nav-item dropdown no-arrow">
@@ -139,107 +137,81 @@ function App() {
 
                     {/*<!-- Begin Page Content -->*/}
                     <div className="container-fluid">
-                        <h4 className="text-center my-4" > Gestion de Usuarios Internos </h4>
-                        <table className="table table-bordered">
-                            <thead className="table-dark" >
-                                <tr>
-                                    <th>Empleado</th>
-                                    <th>Trabajo</th>
-                                    <th>Ajustes </th>
+                    <table className="table table-bordered">
+                                        <thead className="table-dark" >
+                                            <tr>
+                                                <th>empleado</th>
+                                                <th>trabajo</th>
 
 
-                                </tr>
-                            </thead>
-                            <tbody className="table-dark  table-hover ">
-                                <tr>
-                                    <td> Anna Rivera </td>
-                                    <td> Limpieza facial </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>     </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>Maria Castro</td>
-                                    <td> Hidratación Facial</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-                                </tr>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="table-dark  table-hover ">
+                                            <tr>
+                                                <td> Anna Rivera </td>
+                                                <td> Limpieza facial </td>
 
 
-                                <tr>
-                                    <td>Karina Ramirez</td>
-                                    <td> Grafilado </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
+                                            </tr>
 
-                                </tr>
+                                            <tr>
+                                                <td>Maria Castro</td>
+                                                <td> Hidratación Facial </td>
 
-
-                                <tr>
-                                    <td> Luz Maria </td>
-                                    <td> Pixie</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>    </td>
-
-                                </tr>
+                                            </tr>
 
 
-                                <tr>
-                                    <td>Javier Rodriguez</td>
-                                    <td>Degradado</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
+                                            <tr>
+                                                <td>Karina Ramirez</td>
+                                                <td> Grafilado </td>
+
+                                            </tr>
 
 
-                                </tr>
+                                            <tr>
+                                                <td> Luz Maria </td>
+                                                <td> Pixie</td>
 
-                                <tr>
-                                    <td>Juan Ortega</td>
-                                    <td>Buzz</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-                                </tr>
-
-                            </tbody>
+                                            </tr>
 
 
-                        </table>
-                        <div className="ml-5">
-                            <form className="user">
-                                <div className="form-group row ">
-                                    <div className="col-5">
-                                        <input type="text" className="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="Nombre" />
-                                    </div>
-                                    <div className="col-5">
-                                        <input type="text" className="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Trabajo" />
-                                    </div>
-                                    <div className="col-2">
-                                        <button type="button" class="btn btn-success">Agregar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                                            <tr>
+                                                <td>Javier Rodriguez</td>
+                                                <td>Degradado</td>
 
-                        {/*<!-- /.container-fluid -->*/}
 
+                                            </tr>
+
+                                            <tr>
+                                                <td>Juan Ortega</td>
+                                                <td>Buzz</td>
+
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                       
                     </div>
-                    {/*<!-- End of Main Content -->*/}
-
-                    {/*<!-- Footer -->*/}
-                    <footer className="sticky-footer bg-white">
-                        <div className="container my-auto">
-                            <div className="copyright text-center my-auto">
-                                <span>Copyright &copy; Your Website 2021</span>
-                            </div>
-                        </div>
-                    </footer>
-                    {/*<!-- End of Footer -->*/}
+                    {/*<!-- /.container-fluid -->*/}
 
                 </div>
-                {/*<!-- End of Content Wrapper -->*/}
-                {/*<!-- End of Page Wrapper -->*/}
-            </div>
-        </div>
+                {/*<!-- End of Main Content -->*/}
 
+                {/*<!-- Footer -->*/}
+                <footer className="sticky-footer bg-white">
+                    <div className="container my-auto">
+                        <div className="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2021</span>
+                        </div>
+                    </div>
+                </footer>
+                {/*<!-- End of Footer -->*/}
+
+            </div>
+            {/*<!-- End of Content Wrapper -->*/}
+            {/*<!-- End of Page Wrapper -->*/}
+        </div>
     );
 }
 
