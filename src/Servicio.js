@@ -1,9 +1,19 @@
 import './App.css';
 import { Link } from "react-router-dom";
+import TableServicio from './components/tableServicio.js';
+import React from 'react';
 
 function Servicio() {
-    return (
+    
 
+    const [dataApi,setDataApi] = React.useState([]);
+    React.useEffect(()=>{
+        fetch("http://localhost:3004/servicio")
+        .then(response => response.json())
+        .then(data => setDataApi(data));
+    },[])
+    return (
+        
 
         <div id="wrapper">
             <div id="content-wrapper" className="d-flex flex-column">
@@ -57,71 +67,7 @@ function Servicio() {
 
                                 <h3 className="text-center mb-4">Horarios</h3>
                                 
-                                <table className="table table-bordered" >
-                                        <thead className="table-dark" >
-                                            <tr>
-                                                <th>Mañana</th>
-                                                <th>Tarde</th>
-                                                <th>Empleado</th>
-                                                <th>Disponibilidad</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="table-dark  table-hover ">
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td>Ocupado</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td><a  href="/gestionReservas">Reservar</a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td><a  href="/gestionReservas">Reservar</a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td><a  href="/gestionReservas">Reservar</a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td>Ocupado</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td>Ocupado</td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>08:00-08:45</td>
-                                                <td>13:00-13:45</td>
-                                                <td>NombreEmpleado</td>
-                                                <td>Ocupado</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                                <TableServicio data={dataApi} />  
                             </div>
                         </div>
                         

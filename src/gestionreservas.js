@@ -1,7 +1,16 @@
 import './App.css';
 import { Link } from "react-router-dom";
+import TableGestion from './components/tableGestion';
+import React from 'react';
 
-function reservas() {
+function Reservas() {
+    
+    const [dataApi,setDataApi] = React.useState([]);
+    React.useEffect(()=>{
+        fetch("http://localhost:3004/gestionReserva")
+        .then(response => response.json())
+        .then(data => setDataApi(data));
+    },[])
     return (
 
         <div className="container-fluid" style={{ height: "750px" }}>
@@ -44,151 +53,8 @@ function reservas() {
                         <div className="col-lg-12">
                             <div className="p-12">
                                 <div className="card shadow mb-10">
-                                    <table className="table table-bordered">
-                                        <thead className="table-dark" >
-                                            <tr>
-                                                <th className="text-center">Servicio</th>
-                                                <th className="text-center">Fecha</th>
-                                                <th className="text-center">Hora</th>
-                                                <th className="text-center">Estado</th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody className="table-dark  table-hover ">
-                                            <tr>
-                                                <td>mascarillas</td>
-                                                <td> 28/11/2021 </td>
-                                                <td> 08:00-08:45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td>cortes</td>
-                                                <td> 28/11/2021 </td>
-                                                <td> 09:00-09:45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>cortes </td>
-                                                <td> 28/11/2021 </td>
-                                                <td> 10:00-10:45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>cortes</td>
-                                                <td> 29/11/2021 </td>
-                                                <td> 11:00-11:45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>cortes</td>
-                                                <td>  29/11/2021 </td>
-                                                <td> 02:00-02-45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>mascarillas</td>
-                                                <td> 29/11/2021 </td>
-                                                <td> 03:00-03:45  </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>Diseño de uñas</td>
-                                                <td> 31/11/2021 </td>
-                                                <td> 04:00-04:45 </td>
-                                                <td>
-                                                    <div className="row">
-                                                        <div className="col-lg-4 mt-2">
-                                                            <p>Programado</p>
-                                                        </div>
-                                                        <div className="col-lg-4 ">
-                                                            <button type="button" className="btn btn-danger">Cancelar</button>
-                                                        </div> 
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-
-
-
-
-                                        </tbody>
-
-                                    </table>
-
+                                    <TableGestion data={dataApi} />
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -208,4 +74,4 @@ function reservas() {
     );
 }
 
-export default reservas;
+export default Reservas;

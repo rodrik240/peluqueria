@@ -8,11 +8,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registro from './Registro';
 import Inicio from './Inicio'
 import Servicios from './Servicios'
-import Servicio from './Servicio'
 import Agenda from './agenda'
 import Gestionreservas from './gestionreservas'
 import Reporte from './reporte'
 import CrearUsuarios from './crearUsuarios'
+import Servicio from './Servicio'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -22,7 +22,7 @@ ReactDOM.render(
         <Route path="/registro" element={<Registro />} />
         <Route path="/dashboard" element={<App />} />
         <Route path="/servicios" element={<Servicios />} />
-        <Route path="/servicio" element={<Servicio />} />
+        <Route path="/servicio" element={<Servicio/>} />
         <Route path="/agenda" element={<Agenda />} />
         <Route path="/gestionReservas" element={<Gestionreservas />} />
         <Route path="/reporte" element={<Reporte />} />

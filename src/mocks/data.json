@@ -1,0 +1,144 @@
+{
+    "agenda": [
+        {
+            "id": 1,
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "servicio": "mascarillas",
+            "usuario": "Kelly32"
+        },
+        {
+            "id": 2,
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "servicio": "mascarillas",
+            "usuario": "Kelly32"
+        },
+        {
+            "id": 3,
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "servicio": "mascarillas",
+            "usuario": "Kelly32"
+        }
+    ],
+    "servicio": [
+        {
+            "id": 1,
+            "manana": "08:00-08-45",
+            "tarde": "08:00-08-45",
+            "servicio": "mascarillas",
+            "empleado": "Paco Rivera",
+            "disponibilidad":"Reservar"
+
+        },
+        {
+            "id": 2,
+            "manana": "08:00-08-45",
+            "tarde": "08:00-08-45",
+            "servicio": "mascarillas",
+            "empleado": "Paco Rivera",
+            "disponibilidad":"Ocupada"
+        },
+        {
+            "id": 3,
+            "manana": "08:00-08-45",
+            "tarde": "08:00-08-45",
+            "servicio": "mascarillas",
+            "empleado": "Paco Rivera",
+            "disponibilidad":"Reservar"
+        }
+    ],
+    "gestionReserva": [
+        {
+            "id": 1,
+            "servicio": "mascarillas",
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "estado": "Progamado"
+        },
+        {
+            "id": 2,
+            "servicio": "mascarillas",
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "estado": "Progamado"
+        },
+        {
+            "id": 3,
+            "servicio": "mascarillas",
+            "fecha": "28/11/2021",
+            "hora": "08:00-08-45",
+            "estado": "Progamado"
+        }
+    ],
+    "reporte1": [
+        {
+            "id": "1",
+            "fecha": "23/12/2021",
+            "hora": "13:00-13:45",
+            "servicio": "Mascarilla",
+            "empleado": "luis Barrios",
+            "estado": "Disponible"
+        },
+        {
+            "id": "2",
+            "fecha": "23/12/2021",
+            "hora": "13:00-13:45",
+            "servicio": "Mascarilla",
+            "empleado": "luis Barrios",
+            "estado": "Disponible"
+        },
+        {
+            "id": "3",
+            "fecha": "23/12/2021",
+            "hora": "13:00-13:45",
+            "servicio": "Mascarilla",
+            "empleado": "luis Barrios",
+            "estado": "Disponible"
+        }
+    ],
+    "reporte2": [
+        {
+            "id": "1",
+            "fecha": "30/11/2021 ",
+            "usuario": "Kelly32",
+            "servicio": "cortes",
+            "costo": "13.000"
+        },
+        {
+            "id": "2",
+            "fecha": "30/11/2021 ",
+            "usuario": "Kelly32",
+            "servicio": "cortes",
+            "costo": "13.000"
+        },
+        {
+            "id": "3",
+            "fecha": "30/11/2021 ",
+            "usuario": "Kelly32",
+            "servicio": "cortes",
+            "costo": "13.000"
+        }
+    ],
+    "reporte3": [
+        {
+            "id": "1",
+            "usuarios": "Kelly32",
+            "servicio": " cortes",
+            "fecha": "7/12/2021"
+        },
+        {
+            "id": "2",
+            "usuarios": "Kelly32",
+            "servicio": " cortes",
+            "fecha": "7/12/2021"
+        },
+        {
+            "id": "3",
+            "usuarios": "Kelly32",
+            "servicio": " cortes",
+            "fecha": "7/12/2021"
+        }
+    ]
+}

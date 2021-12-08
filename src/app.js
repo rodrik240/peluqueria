@@ -53,7 +53,9 @@ function App() {
                             <h6 className="collapse-header">Empleados</h6>
                             <a className="collapse-item" href="/agenda">Agenda</a>
                             <a className="collapse-item" href="/reporte">Reportes</a>
+                            <a className="collapse-item" href="/crearUsuarios">Crear Empleados</a>
                         </div>
+
                     </div>
                 </li>
 
@@ -137,7 +139,7 @@ function App() {
 
                     {/*<!-- Begin Page Content -->*/}
                     <div className="container-fluid">
-                        <h4 className="text-center mt-4" > Gestion de Usuarios Internos </h4>
+                        <h4 className="text-center my-4" > Gestion de Usuarios Internos </h4>
                         <table className="table table-bordered">
                             <thead className="table-dark" >
                                 <tr>
@@ -196,28 +198,26 @@ function App() {
                                 </tr>
 
                             </tbody>
-                        
+
 
                         </table>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-8">
-                                <div className="form-group row">
-                                                <div className="col-sm-6 mb-3 mb-sm-0">
-                                                    <input type="text" className="form-control form-control-user" id="exampleFirstName"
-                                                        placeholder="Empleado" />
-                                                </div>
-                                                <div className="col-sm-6">
-                                                    <input type="text" className="form-control form-control-user" id="exampleLastName"
-                                                        placeholder="Trabajo" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                <div class="col-4">
-                                    <button id="btnSubmit" className="btn btn-success form-control btn-block" type="submit">Agregar </button> </div>
-                            </div>
+                        <div className="ml-5">
+                            <form className="user">
+                                <div className="form-group row ">
+                                    <div className="col-5">
+                                        <input type="text" className="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="Nombre" />
+                                    </div>
+                                    <div className="col-5">
+                                        <input type="text" className="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Trabajo" />
+                                    </div>
+                                    <div className="col-2">
+                                        <button type="button" class="btn btn-success">Agregar</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-
 
                         {/*<!-- /.container-fluid -->*/}
 
