@@ -11,6 +11,7 @@ import Servicios from './Servicios'
 import Servicio from './Servicio'
 import Agenda from './agenda'
 import Gestionreservas from './gestionreservas'
+import Reporte from './reporte'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Route path="/servicio" element={<Servicio />} />
         <Route path="/agenda" element={<Agenda />} />
         <Route path="/gestionReservas" element={<Gestionreservas />} />
+        <Route path="/reporte" element={<Reporte />} />
       </Routes>
     </Router>
   </React.StrictMode>
