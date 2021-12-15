@@ -154,14 +154,14 @@ function App() {
                                 <tr>
                                     <td> Anna Rivera </td>
                                     <td> Limpieza facial </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>     </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Eliminar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>     </td>
 
                                 </tr>
 
                                 <tr>
                                     <td>Maria Castro</td>
                                     <td> Hidratación Facial</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Eliminar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
                                 </tr>
 
@@ -169,7 +169,7 @@ function App() {
                                 <tr>
                                     <td>Karina Ramirez</td>
                                     <td> Grafilado </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
+                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Eliminar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
 
                                 </tr>
 
