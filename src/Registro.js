@@ -77,7 +77,6 @@ function Registro() {
                                                     <option selected disabled>Sexo</option>
                                                     <option>M</option>
                                                     <option>F</option>
-                                                    <option>Otro</option>
                                                 </select>
                                             </div>
                                             <div className="form-group row">
