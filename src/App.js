@@ -1,247 +1,42 @@
-import './App.css';
-import { Link } from "react-router-dom";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
+import Login from './components/Login';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Registro from './components/Registro';
+import Inicio from './components/Inicio'
+import Servicios from './components/Servicios'
+import Agenda from './components/agenda'
+import Gestionreservas from './components/gestionreservas'
+import Reporte from './components/reporte'
+import Servicio from './components/Servicio'
+import Admin from './components/admin'
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+
+import './App.css';
 
 function App() {
     return (
-
-
-        <div id="wrapper">
-            {/*<!-- Page Wrapper -->*/}
-            {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-                {/*<!-- Sidebar - Brand -->*/}
-
-                <Link to="/dashboard" className="sidebar-brand d-flex align-items-center justify-content-center">
-                    <div className="sidebar-brand-icon rotate-n-15">
-                        <i className="fas fa-laugh-wink"></i>
-                    </div>
-                    <div className="sidebar-brand-text mx-3">Admin<sup>2</sup></div>
-                </Link>
-
-                {/*<!-- Divider -->*/}
-
-
-
-                {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider" />
-
-                {/*<!-- Heading -->*/}
-                <div className="sidebar-heading">
-                    Gestión
-                </div>
-
-                {/*<!-- Nav Item - Pages Collapse Menu -->*/}
-                <li className="nav-item">
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                        aria-expanded="true" aria-controls="collapsePages">
-                        <i className="fas fa-fw fa-folder"></i>
-                        <span>Paginas</span>
-                    </a>
-                    <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                        <div className="bg-white py-2 collapse-inner rounded">
-                            <h6 className="collapse-header">Clientes</h6>
-                            <a className="collapse-item" href="/">Inicio</a>
-                            <a className="collapse-item" href="/ingresar">Ingreso</a>
-                            <a className="collapse-item" href="/registro">Registro</a>
-                            <a className="collapse-item" href="/servicios">ListaServicios</a>
-                            <a className="collapse-item" href="/servicio">Servicio</a>
-                            <a className="collapse-item" href="/gestionReservas">GestionReservas</a>
-                        </div>
-                        <div className="bg-white py-2 collapse-inner rounded">
-                            <h6 className="collapse-header">Empleados</h6>
-                            <a className="collapse-item" href="/agenda">Agenda</a>
-                            <a className="collapse-item" href="/reporte">Reportes</a>
-                            <a className="collapse-item" href="/crearUsuarios">Crear Empleados</a>
-                        </div>
-
-                    </div>
-                </li>
-
-                {/*<!-- Nav Item - Charts -->*/}
-
-
-
-
-
-
-            </ul>
-            {/*<!-- End of Sidebar -->*/}
-
-            {/*<!-- Content Wrapper -->*/}
-            <div id="content-wrapper" className="d-flex flex-column">
-
-                {/*<!-- Main Content -->*/}
-                <div id="content">
-
-                    {/*<!-- Topbar -->*/}
-                    <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                        {/*<!-- Sidebar Toggle (Topbar) -->*/}
-                        <button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
-                            <i className="fa fa-bars"></i>
-                        </button>
-
-
-
-                        {/*<!-- Topbar Navbar -->*/}
-                        <ul className="navbar-nav ml-auto">
-
-                            {/*<!-- Nav Item - Search Dropdown (Visible Only XS) -->*/}
-                            <li className="nav-item dropdown no-arrow d-sm-none">
-                                <a className="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i className="fas fa-search fa-fw"></i>
-                                </a>
-                                {/*<!-- Dropdown - Messages -->*/}
-                                <div className="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                    aria-labelledby="searchDropdown">
-                                    <form className="form-inline mr-auto w-100 navbar-search">
-                                        <div className="input-group">
-                                            <input type="text" className="form-control bg-light border-0 small"
-                                                placeholder="Search for..." aria-label="Search"
-                                                aria-describedby="basic-addon2" />
-                                            <div className="input-group-append">
-                                                <button className="btn btn-primary" type="button">
-                                                    <i className="fas fa-search fa-sm"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </li>
-
-
-
-                            {/*<!-- Nav Item - User Information -->*/}
-                            <li className="nav-item dropdown no-arrow">
-                                <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                    <img className="img-profile rounded-circle"
-                                        src="img/undraw_profile.svg" />
-                                </a>
-                                {/*<!-- Dropdown - User Information -->*/}
-                                <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                    aria-labelledby="userDropdown">
-                                    <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                        <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Logout
-                                    </a>
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </nav>
-                    {/*<!-- End of Topbar -->*/}
-
-                    {/*<!-- Begin Page Content -->*/}
-                    <div className="container-fluid">
-                        <h4 className="text-center my-4" > Gestion de Usuarios Internos </h4>
-                        <table className="table table-bordered">
-                            <thead className="table-dark" >
-                                <tr>
-                                    <th>Empleado</th>
-                                    <th>Trabajo</th>
-                                    <th>Ajustes </th>
-
-
-                                </tr>
-                            </thead>
-                            <tbody className="table-dark  table-hover ">
-                                <tr>
-                                    <td> Anna Rivera </td>
-                                    <td> Limpieza facial </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>     </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>Maria Castro</td>
-                                    <td> Hidratación Facial</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-                                </tr>
-
-
-                                <tr>
-                                    <td>Karina Ramirez</td>
-                                    <td> Grafilado </td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-                                </tr>
-
-
-                                <tr>
-                                    <td> Luz Maria </td>
-                                    <td> Pixie</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div>  <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>    </td>
-
-                                </tr>
-
-
-                                <tr>
-                                    <td>Javier Rodriguez</td>
-                                    <td>Degradado</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-
-                                </tr>
-
-                                <tr>
-                                    <td>Juan Ortega</td>
-                                    <td>Buzz</td>
-                                    <td> <div className="col-lg-2 "> <button type="button" className="btn btn-danger" >Cancelar</button> </div> <div className="col-lg-4 mt-2"> <button type="button" className="btn btn-primary" >Editar</button> </div>   </td>
-
-                                </tr>
-
-                            </tbody>
-
-
-                        </table>
-                        <div className="ml-5">
-                            <form className="user">
-                                <div className="form-group row ">
-                                    <div className="col-5">
-                                        <input type="text" className="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="Nombre" />
-                                    </div>
-                                    <div className="col-5">
-                                        <input type="text" className="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Trabajo" />
-                                    </div>
-                                    <div className="col-2">
-                                        <button type="button" class="btn btn-success">Agregar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        {/*<!-- /.container-fluid -->*/}
-
-                    </div>
-                    {/*<!-- End of Main Content -->*/}
-
-                    {/*<!-- Footer -->*/}
-                    <footer className="sticky-footer bg-white">
-                        <div className="container my-auto">
-                            <div className="copyright text-center my-auto">
-                                <span>Copyright &copy; Your Website 2021</span>
-                            </div>
-                        </div>
-                    </footer>
-                    {/*<!-- End of Footer -->*/}
-
-                </div>
-                {/*<!-- End of Content Wrapper -->*/}
-                {/*<!-- End of Page Wrapper -->*/}
-            </div>
-        </div>
+        
+        <Router>
+          <Nav />
+          <Routes>
+            <Route path="/ingresar" element={<Login />} />
+            <Route exact path="/" element={<Inicio />} />
+            <Route path="/registro" element={<Registro />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/servicio" element={<Servicio/>} />
+            <Route path="/agenda" element={<Agenda />} />
+            <Route path="/gestionReservas" element={<Gestionreservas />} />
+            <Route path="/reporte" element={<Reporte />} />
+          </Routes>
+          <Footer />
+        </Router>
 
     );
-}
-
-
-export default App;
+  }
+  
+  export default App;
+  

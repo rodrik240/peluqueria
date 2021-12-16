@@ -1,45 +1,13 @@
-import './App.css';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
+import React from 'react'
 
-function Servicios() {
+const Servicios = () => {
+
     return (
-
-
         <div id="wrapper">
             <div id="content-wrapper" className="d-flex flex-column">
-                <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5 mb-5">
-                    <a className="navbar-brand" href="/#">
-                        <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
-                        PeluqueriaUnisex
-                    </a>
-                    <ul className="navbar-nav ml-auto ">
 
-                        <li className="nav-item active">
-                            <Link to="/" className="nav-link">
-                                Inicio
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/servicios">Servicios</a>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/ingresar" className="nav-link">
-                                Ingresar
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/registro" className="nav-link">
-                                Registrarse
-                            </Link>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-
-
-                <div className="container" style={{ height: "100%" }} >
+                <div className="container mt-5" style={{ height: "100%" }} >
 
 
 
@@ -87,18 +55,10 @@ function Servicios() {
 
 
                 </div>
-                <footer className="sticky-footer bg-white">
-                    <div className="container my-auto">
-                        <div className="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2020</span>
-                        </div>
-                    </div>
-                </footer>
+
             </div>
         </div>
-
-
-    );
+    )
 }
 
 export default Servicios;

@@ -1,8 +1,7 @@
-import './App.css';
-import { Link } from "react-router-dom";
+import React from 'react'
 
+const Inicio = () => {
 
-function Inicio() {
     return (
         <div id="wrapper">
             {/* <!-- Page Wrapper --> */}
@@ -11,39 +10,7 @@ function Inicio() {
             <div id="content-wrapper">
 
                 {/* <!-- Main Content --> */}
-                <div id="content ">
 
-                    {/* <!-- Topbar --> */}
-                    <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar static-top shadow px-5">
-                        <a className="navbar-brand" href="/#">
-                            <img src="/img/salon.png" width="30" height="30" className="d-inline-block align-top" alt="" />
-                            PeluqueriaUnisex
-                        </a>
-                        <ul className="navbar-nav ml-auto ">
-
-                            <li className="nav-item active">
-                                <Link to="/" className="nav-link">
-                                    Inicio
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/servicios">Servicios</a>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/ingresar" className="nav-link">
-                                    Ingresar
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/registro" className="nav-link">
-                                    Registrarse
-                                </Link>
-                            </li>
-
-                        </ul>
-
-                    </nav>
-                </div>
                 {/* <!-- End of Topbar --> */}
 
                 {/* <!-- Begin Page Content --> */}
@@ -86,29 +53,9 @@ function Inicio() {
 
 
                 </div>
-
-
-
-
-                {/* <!-- /.container-fluid --> */}
-
-
-                {/* <!-- End of Main Content --> */}
-
-                {/* <!-- Footer --> */}
-                <footer className="sticky-footer bg-white">
-                    <div className="container my-auto">
-                        <div className="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2020</span>
-                        </div>
-                    </div>
-                </footer>
-                {/* <!-- End of Footer --> */}
-
             </div>
-            {/* <!-- End of Content Wrapper --> */}
         </div>
-    );
+    )
 }
 
 export default Inicio;

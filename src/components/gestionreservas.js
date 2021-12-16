@@ -1,18 +1,10 @@
-import './App.css';
 import { Link } from "react-router-dom";
-import TableGestion from './components/tableGestion';
-import React from 'react';
 
-function Reservas() {
-    
-    const [dataApi,setDataApi] = React.useState([]);
-    React.useEffect(()=>{
-        fetch("http://localhost:3004/gestionReserva")
-        .then(response => response.json())
-        .then(data => setDataApi(data));
-    },[])
+import React from 'react'
+
+const gestionreservas = () => {
+
     return (
-
         <div className="container-fluid" style={{ height: "750px" }}>
             <nav className="navbar navbar-expand navbar-dark bg-gradient-warning topbar mb-4 static-top shadow px-5">
                 <a className="navbar-brand" href="/#">
@@ -53,25 +45,16 @@ function Reservas() {
                         <div className="col-lg-12">
                             <div className="p-12">
                                 <div className="card shadow mb-10">
-                                    <TableGestion data={dataApi} />
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer className="sticky-footer bg-white">
-                <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+
         </div>
-
-
-
-    );
+    )
 }
 
-export default Reservas;
+export default gestionreservas;
